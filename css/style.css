@@ -87,10 +87,6 @@ h1 {
     font-size: 1.5em;
     padding: 10px;
 }
-h1:focus {
-    background-color: #F06400;
-    color: white;
-}
 p {
     font-family: "SF Pro Display";
     font-size: 1em;
@@ -160,6 +156,11 @@ footer p {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
