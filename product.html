@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="icon" type="image/png" href="images/logo-drk.png" /> -->
+   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <title>WarmzItUp Product Page </title>
+ </head>
+ <body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <!-- USED THIS RESOURCE FOR A DIFFERENT SKIP TO MAIN https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ -->
+    <header>
+        <nav>
+          <img src="images/logo2.jpeg" alt="" id="logo">
+            <ul>
+              <li><a href="index.html" class="nav-link">About</a></li>
+              <li><a href="product.html" class="here">Product</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+      </header>
+    <main class="main" id="main">
+        <section id="product">
+            <!-- COPIED FROM INDEX PAGE -->
+            <img src = "images/buddytray.webp" alt="placeholder image" class="productimage">
+            <h1 class="proh1">Our Product</h1>
+            <div class="productinfo">
+                <h2 class="proh2">WarmzItUp Buddy Tray</h2>
+                <h2 class="proh2"> $20 </h2>
+                <div class="quantity-container">
+                    <label for="quantity" class="labelpro">Select Quantity</label>
+                    <select id="quantity" onchange="updateQuantity()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <p class="prop">We are taking the heat from your portable heater and directing it to our pan. It will not only keep you warm, but it will also keep your food and beverages warm as well. Take a look at our product pictures and see how it can work for you. </p>
+                <form action="404.html" method="get">
+                    <input type="submit" value="Add to Cart" class="addtocart">
+                </form>
+                <!-- FOUND OUT HOW TO LINK 404 USING THIS https://www.w3schools.com/tags/att_input_formaction.asp#:~:text=The%20formaction%20attribute%20specifies%20the,and%20type%3D%22image%22%20. -->
+            </div>
+            <script src="js/product.js"></script>
+                <!-- ABOVE IS RESOURCED FROM W3 SCHOOLS https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+                <!-- ALSO RESOURCED FROM THIS FORM https://stackoverflow.com/questions/33555501/how-to-refresh-html-field-on-selecting-the-drop-down-list -->
+            </div>
+        </section>
+        </main>
+        <footer class="profoot">
+            <p>&copy; 2021 WarmzItUp</p>
+        </footer>
+</body>
+</html>

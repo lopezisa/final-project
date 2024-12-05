@@ -1,0 +1,352 @@
+/* MOBILE DISPLAY */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex: 1;
+  }
+/* ISSUE:
+  While editing the product page, my footer was not displaying at the bottom of the page. I had to add the following code to fix the issue (listed above)
+  found at: https://forum.freecodecamp.org/t/how-to-keep-footer-at-bottom-of-the-page/651022
+  ADDED CODE ON NOV 27TH*/
+nav {
+    background-color: #F06400;
+    background-image: linear-gradient(black, #F06400, black);
+    padding: 10px;
+    text-align: center;
+}
+/* CHANGES BACKGROUND COLOR - IF GRADIENT NOT POSSIBLE, DEFAULT ORANGE */
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    padding: 15%;
+    text-decoration: none;
+}
+/* ABOVE MAKES THE FLEX POSSIBLE */
+nav li {
+    display: inline;
+    padding: 10%;
+    text-decoration: none;
+    font-family: "SF Pro Display";
+}
+/* ABOVE CHANGES FONT OF NAVIGATION AND IN-LINE DISPLAY*/
+nav a:hover, nav a:focus {
+    font-weight: bold;
+    text-decoration: underline;
+   }
+/* ABOVE CHANGES HOVER AND FOCUS */
+/* USED PREVIOUS CODE FROM FLEX BOX (HW5) - BUT CHANGED FONT WEIGHT AND BORDER ASPECT*/
+nav a {
+    color: white;
+    text-decoration: none;
+}
+/* ABOVE CHANGES TEXT COLOR */
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:black;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid orange;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+/* USED THIS RESOURCE FOR A DIFFERENT SKIP TO MAIN https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ CHANGED COLORS, BUT EVERYTHING ELSE IS THE SAME*/
+/* FIX SKIP ABOVE */
+#logo {
+    border-radius: 50%;
+}
+.here {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: black;
+}
+/* ADDED .HERE DURING WEEK 2 */
+/* NAVIGATION AREA ALL ABOVE */
+h1 {
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 1.5em;
+    padding: 10px;
+}
+p {
+    font-family: "SF Pro Display";
+    font-size: 1em;
+}
+/* ABOVE CHANGES THE TEXT AND FONT OF THE H2 AND P */
+/* P IS NOT ALIGNED CENTER - LOOKS WEIRD */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+p {
+    justify-self: center;
+    padding: 20px;
+}
+#placeholder {
+    justify-items: start;
+}
+/* MOBILE DISPLAY IS CENTERED VERTIFCALLY WITH IMAGES AND TEXT */
+footer {
+    position: static;
+    background-color: #F06400;
+    background-image: linear-gradient(black, #F06400, black);
+    margin-top: auto;
+}
+/* FOOTER BACKGROUND COLOR */
+footer p {
+    color: white;
+    text-decoration: none;
+    font-family: "SF Pro Display";
+    text-align: center;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+}
+/* ADDED PADDING FOR MOBILE DISPLAY */
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  /* position: absolute; */
+  /* changed position because it looks better - i don't like how it was on top of the image*/
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+/* CHANGED BACKGROUND COLOR OF TEXT FOR ACCESSIBILITY */
+/* ADDED PADDING TO MATCH SLIDESHOW CONTAINER */
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #F06400;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* CHANGED DOT COLOR */
+.active, .dot:hover {
+  background-color: black;
+}
+/* CHANGED DOT COLOR (ACTIVE) */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* ABOVE IS RESOURCED FROM W3 SCHOOLS */
+.productimage {
+    display: inline;
+    float: left;
+    width: 40%;
+    padding: 10px;
+    margin-top: 100px;
+}
+/* NOTES:
+FLOAT MAKES THE IMAGE GO LEFT - DO NOT FIX SIZING IT IS FINE - PADDING IS GOOD */
+.proh1 {
+    text-align: left;
+}
+/* FIX TEXT ALIGN - PREVIOUS H1 IS MAKING IT SPACED WEIRD */
+.productinfo {
+    float: right;
+    width: 60%;
+    margin-top: 10px;
+}
+.proh2 {
+    font-family: "SF Pro Display";
+    text-align: left;
+    padding: 10px;
+}
+.prop {
+    text-align: left;
+    padding: 10px;
+}
+.profooter {
+    bottom: 0px;
+}
+/* ADD PADDING TO H2 TO MATCH H1 */
+.quantity-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+    padding: 10px;
+    font-family: "SF Pro Display";
+}
+/* ABOVE MAKES THE QUANTITY CONTAINER FLEX */
+.labelpro {
+    display: block;
+    padding: 0px;
+}
+/* ABOVE MAKES SURE THE PRODUCT LABEL DOESNT HAVE PADDING THAT MESSES WITH THE ALIGNING */
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    font-family: "SF Pro Display";
+    border: 2px solid black;
+    border-radius: 5px;
+}
+input[type=text]:focus {
+    background-color: #D3D3D3;
+}
+textarea {
+    width: 95%;
+    padding: 10px 10px;
+    margin: 10px;
+    font-family: "SF Pro Display";
+    border: 2px solid black;
+    border-radius: 5px;
+}
+textarea:focus {
+    background-color: #D3D3D3;
+}
+.container2 {
+    border-radius: 5px;
+    background-color: #ffe5d4;
+}
+label {
+    display: block;
+    font-family: "SF Pro Display";
+    padding: 10px;
+}
+.aligningstuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+input[type=submit] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    font-family: "SF Pro Display";
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #F06400;
+    color: white;
+}
+input[type=submit]:hover{
+    background-color: black;
+}
+input[type=submit]:focus {
+    background-color: black;
+}
+/* ABOVE CHANGES THE BUTTON COLOR AND HOVER COLOR AND FORM THINGS RESOURCED FROM https://www.w3schools.com/html/html_forms.asp */
+@media screen and (min-width: 900px) {
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav {
+        text-align: right;
+    }
+    nav li {
+        display: inline;
+        padding: 10px;
+        text-decoration: none;
+        font-family: "SF Pro Display";
+    }
+    #logo {
+    border-radius: 50%;
+    width: 30%;
+    float: left;
+    }
+    .proh1 {
+        text-align: center;
+    }
+    .productimage {
+        margin-top: 80px;
+    }
+}
+/* DESKTOP DISPLAY CHANGES NAV, LOGO, AND PRODUCT IMAGE (SLIGHTLY) */
+@media (prefers-reduced-motion) {
+    .fade {
+        animation: none;
+    }
+}
+/* TESTED ON MACBOOK AIR - SLIDESHOW ANIMATION IS GONE WHEN REDUCED MOTION IS ON */
+/* END OF CSS */
