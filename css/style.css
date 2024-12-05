@@ -87,6 +87,10 @@ h1 {
     font-size: 1.5em;
     padding: 10px;
 }
+h1:focus {
+    background-color: #F06400;
+    color: white;
+}
 p {
     font-family: "SF Pro Display";
     font-size: 1em;
@@ -143,6 +147,7 @@ footer p {
   width: auto;
   margin-top: -22px;
   padding: 16px;
+  background-color: black;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -181,9 +186,10 @@ footer p {
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
+  background-color: black;
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
 }
 
@@ -306,13 +312,15 @@ input[type=submit] {
     border: 2px solid black;
     border-radius: 5px;
     background-color: #F06400;
-    color: white;
+    color: black;
 }
 input[type=submit]:hover{
     background-color: black;
+    color: white;
 }
 input[type=submit]:focus {
     background-color: black;
+    color: white;
 }
 /* ABOVE CHANGES THE BUTTON COLOR AND HOVER COLOR AND FORM THINGS RESOURCED FROM https://www.w3schools.com/html/html_forms.asp */
 @media screen and (min-width: 900px) {
