@@ -15,7 +15,7 @@ html, body {
 nav {
     background-color: #F06400;
     background-image: linear-gradient(black, #F06400, black);
-    padding: 25px;
+    padding: 20px;
     text-align: center;
 }
 /* CHANGES BACKGROUND COLOR - IF GRADIENT NOT POSSIBLE, DEFAULT ORANGE */
@@ -111,6 +111,7 @@ footer {
     background-color: #F06400;
     background-image: linear-gradient(black, #F06400, black);
     margin-top: auto;
+    padding: 10px;
 }
 /* FOOTER BACKGROUND COLOR */
 footer p {
