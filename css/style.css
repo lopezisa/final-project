@@ -111,7 +111,6 @@ footer {
     background-color: #F06400;
     background-image: linear-gradient(black, #F06400, black);
     margin-top: auto;
-    padding: 10px;
 }
 /* FOOTER BACKGROUND COLOR */
 footer p {
@@ -163,7 +162,7 @@ footer p {
     left: 0;
     border-radius: 3px 0 0 3px;
 }
-
+/* ADD PREVIOUS BUTTON */
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
