@@ -167,6 +167,10 @@ footer p {
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+.prev:focus, .next:focus {
+    border: 4px solid orange;
+    background-color: rgba(0,0,0,0.8);
+}
 
 /* Caption text */
 .text {
@@ -262,9 +266,15 @@ FLOAT MAKES THE IMAGE GO LEFT - DO NOT FIX SIZING IT IS FINE - PADDING IS GOOD *
     font-family: "SF Pro Display";
 }
 /* ABOVE MAKES THE QUANTITY CONTAINER FLEX */
+.quantity-container:focus {
+    border: 5px solid black;
+}
 .labelpro {
     display: block;
     padding: 0px;
+}
+.labelpro:focus {
+    border: 5px solid black;
 }
 /* ABOVE MAKES SURE THE PRODUCT LABEL DOESNT HAVE PADDING THAT MESSES WITH THE ALIGNING */
 input {
