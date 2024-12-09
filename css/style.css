@@ -30,7 +30,7 @@ nav li {
     display: inline;
     padding: 10%;
     text-decoration: none;
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
 }
 /* ABOVE CHANGES FONT OF NAVIGATION AND IN-LINE DISPLAY*/
 nav a:hover, nav a:focus {
@@ -83,12 +83,12 @@ a.skip-main:focus, a.skip-main:active {
 /* NAVIGATION AREA ALL ABOVE */
 h1 {
     text-align: center;
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     padding: 10px;
 }
 p {
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
 /* ABOVE CHANGES THE TEXT AND FONT OF THE H2 AND P */
@@ -116,7 +116,7 @@ footer {
 footer p {
     color: white;
     text-decoration: none;
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     text-align: center;
 }
 * {box-sizing:border-box}
@@ -245,7 +245,7 @@ FLOAT MAKES THE IMAGE GO LEFT - DO NOT FIX SIZING IT IS FINE - PADDING IS GOOD *
     margin-top: 10px;
 }
 .proh2 {
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     text-align: left;
     padding: 10px;
 }
@@ -263,7 +263,7 @@ FLOAT MAKES THE IMAGE GO LEFT - DO NOT FIX SIZING IT IS FINE - PADDING IS GOOD *
     justify-content: left;
     align-items: start;
     padding: 10px;
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
 }
 /* ABOVE MAKES THE QUANTITY CONTAINER FLEX */
 .quantity-container:focus {
@@ -281,7 +281,7 @@ input {
     width: 95%;
     padding: 10px;
     margin: 10px;
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -292,7 +292,7 @@ textarea {
     width: 95%;
     padding: 10px 10px;
     margin: 10px;
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -305,7 +305,7 @@ textarea:focus {
 }
 label {
     display: block;
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     padding: 10px;
 }
 .aligningstuff {
@@ -319,7 +319,7 @@ input[type=submit] {
     width: 95%;
     padding: 10px;
     margin: 10px;
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     border: 2px solid black;
     border-radius: 5px;
     background-color: #F06400;
@@ -347,7 +347,7 @@ input[type=submit]:focus {
         display: inline;
         padding: 10px;
         text-decoration: none;
-        font-family: "SF Pro Display";
+        font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     }
     #logo {
     border-radius: 50%;
